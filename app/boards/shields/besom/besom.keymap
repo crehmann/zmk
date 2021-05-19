@@ -8,6 +8,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
+#include <dt-bindings/zmk/outputs.h>
 
 #define DEFAULT 0
 #define NAVR   1
@@ -147,13 +148,13 @@
 // ------------------------------------------------------------------                   ------------------------------------------------------------------
 // |            |            |            |            |            |                   |            |            |            |            |            |
 // |   BT CLR   |   BT 0     |   BT 1     |   BT 2     |   BT 3     |                   |            |  prev      |  Vol down  |  Vol up    | next       |
-// |            |            |            |            |            |                   |            |  play      |  mute      |            |            |
+// |            |            |            |  OUT_USB   |  OUT_BLE	|                   |            |  play      |  mute      |            |            |
 // --------------------------|            |            |            |                   |            |            |            |--------------------------                   
 //                            ---------------------------------------                   ---------------------------------------
             bindings = <                                                                  
     &trans       &trans       &trans       &trans       &trans                           &trans       &trans       &trans       &trans       &trans    
     &bt BT_CLR   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3                     &trans       &kp C_PREV   &kp C_VOL_DN &kp C_VOL_UP &kp C_NEXT
-    &trans       &trans       &trans       &trans       &trans                           &trans       &kp C_PLAY   &kp C_MUTE   &trans       &trans    
+    &trans       &trans       &trans       &out OUT_USB &out OUT_BLE                     &trans       &kp C_PLAY   &kp C_MUTE   &trans       &trans    
 				              &trans       &trans       &trans                           &trans       &trans       &trans
             >;                                                                           
         };
