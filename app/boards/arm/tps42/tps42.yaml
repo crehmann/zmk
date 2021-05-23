@@ -1,0 +1,20 @@
+identifier: tps42
+name: TPS42
+type: keyboard
+arch: arm
+toolchain:
+  - zephyr
+  - gnuarmemb
+  - xtools
+supported:
+  - adc
+  - gpio
+  - i2c
+  - usb_device
+  - kscan
+  - ble
+  - pwm
+  - watchdog
+  - kscan
+  - nvs
+  - can

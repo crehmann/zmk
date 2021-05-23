@@ -1,0 +1,7 @@
+/*
+ * Copyright (c) 2020 Christoph Rehmann
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+#include "tps42.keymap"
