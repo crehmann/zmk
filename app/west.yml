@@ -6,10 +6,12 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: microsoft
       url-base: https://github.com/microsoft
+    - name: zephyr-with-il0323
+      url-base: https://github.com/petejohanson
   projects:
     - name: zephyr
-      remote: zmkfirmware
-      revision: v2.4.0+zmk-fixes
+      remote: zephyr-with-il0323
+      revision: display/il0323-initial-driver
       clone-depth: 1
       import:
         # TODO: Rename once upstream offers option like `exclude` or `denylist`

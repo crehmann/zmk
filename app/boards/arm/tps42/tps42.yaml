@@ -9,7 +9,7 @@ toolchain:
 supported:
   - adc
   - gpio
-  - i2c
+  - spi
   - usb_device
   - kscan
   - ble
