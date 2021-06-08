@@ -8,8 +8,8 @@ manifest:
       url-base: https://github.com/microsoft
   projects:
     - name: zephyr
-      url: https://github.com/petejohanson/zephyr
-      revision: v2.5.0-zmk-fixes
+      url: https://github.com/crehmann/zephyr
+      revision: v2.5.0-zmk-fixes-with-il0323
       import:
         # TODO: Rename once upstream offers option like `exclude` or `denylist`
         name-blacklist:
