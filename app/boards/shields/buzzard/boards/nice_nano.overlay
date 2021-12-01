@@ -22,5 +22,6 @@
 		height = <68>;
 		extcomin-gpios = <&pro_micro 2 GPIO_ACTIVE_HIGH>;
 		extcomin-frequency = <60>;
+		disp-en-gpios = <&pro_micro 3 GPIO_ACTIVE_HIGH>; 
 	};
 };
